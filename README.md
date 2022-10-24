@@ -6,6 +6,7 @@
 *   由于最近测试项目需要用到家里的`MacBook`开虚拟机，前一段用`frp` 内网穿透，但是测试项目需要转发很多端口，配置起来也很麻烦，于是乎想到了`zerotier`。
 *   之前用过`zerotier`官网的服务，使用起来各种限制，于是就决定自己搭建planet和moon。
 *   大概查阅了一些资料发现很多教程都不是构建真正的planet，而且配置繁琐，于是决定自己构建docker镜像。
+- 镜像地址：[loganjindev/zerotier-ztncui](https://hub.docker.com/r/loganjindev/zerotier-ztncui "loganjindev/zerotier-ztncui")
 
 ### 镜像简介
 
@@ -130,11 +131,11 @@ docker exec -it zerotier-planet build moonid
 
 ```shell
 # 加入网络
-zerotier-cli join 9fe8a8d5e6d20e14
+zerotier-cli join Network ID
 # 查看当前加入的网络列表
 zerotier-cli listnetworks
 # 删除网络
-zerotier-cli leave 9fe8a8d5e6d20e14
+zerotier-cli leave Network ID
 ```
 
 ### 结语
