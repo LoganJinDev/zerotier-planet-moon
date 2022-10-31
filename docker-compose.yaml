@@ -22,6 +22,6 @@ services:
             - '9993:9993/udp'
             - '3180:3180'
         volumes:
-            - '/data/zerotier/zerotier-one:/var/lib/zerotier-one'
-            - '/data/zerotier/ztncui/etc:/opt/key-networks/ztncui/etc'
+            - './zerotier-one:/var/lib/zerotier-one'
+            - './ztncui/etc:/opt/key-networks/ztncui/etc'
         image: loganjindev/zerotier-ztncui
