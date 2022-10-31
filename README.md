@@ -6,7 +6,8 @@
 *   之前用过`zerotier`官网的服务，使用起来各种限制，于是就决定自己搭建planet和moon。
 *   大概查阅了一些资料发现很多教程都不是构建真正的planet，而且配置繁琐，于是决定自己构建docker镜像。
 *   镜像地址：[loganjindev/zerotier-ztncui](https://hub.docker.com/r/loganjindev/zerotier-ztncui "loganjindev/zerotier-ztncui")
-*   Github地址：[https://github.com/nurnli/zerotier-planet-moon](https://github.com/nurnli/zerotier-planet-moon "https://github.com/nurnli/zerotier-planet-moon")
+*   Github地址：[https://github.com/LoganJinDev/zerotier-planet-moon](https://github.com/LoganJinDev/zerotier-planet-moon "https://github.com/LoganJinDev/zerotier-planet-moon")
+*   Gitee地址：[https://gitee.com/logandev/zerotier-planet-moon](https://gitee.com/logandev/zerotier-planet-moon "https://gitee.com/logandev/zerotier-planet-moon")
 
 ### 镜像简介
 
@@ -28,7 +29,10 @@
 
 ```shell
 # 下载项目
-git clone https://github.com/nurnli/zerotier-planet-moon.git
+git clone https://gitee.com/logandev/zerotier-planet-moon.git
+or 
+git clone https://github.com/LoganJinDev/zerotier-planet-moon.git
+
 # 切换到项目目录
 cd zerotier-planet-moon
 # 启动命令
@@ -51,7 +55,9 @@ docker run -d \
 
 ```shell
 # 下载项目
-git clone https://github.com/nurnli/zerotier-planet-moon.git
+git clone https://gitee.com/logandev/zerotier-planet-moon.git
+or 
+git clone https://github.com/LoganJinDev/zerotier-planet-moon.git
 # 切换到项目目录
 cd zerotier-planet-moon
 # 启动命令
