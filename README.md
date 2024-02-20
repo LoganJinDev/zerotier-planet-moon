@@ -13,7 +13,7 @@
 
 *   [x] 默认用户：`admin`
 *   [x] 默认密码：`loganjin.cn`
-*   [x] zerotier-one版本：`1.10.1`
+*   [x] zerotier-one版本：`1.12.2`
 *   [x] 基础镜像：`debian:bullseye-slim`
 *   [x] 附加功能：`构建planet、构建mooon、查询配置moon方法`
 *   [x] 访问地址：`http://IPaddress:3000`或`https://IPaddress:3443`
@@ -40,15 +40,15 @@ docker run -d \
     --net=host \
     --name zerotier-planet \
     --restart unless-stopped \
-    -v ./zerotier-one:/var/lib/zerotier-one \
-    -v ./ztncui/etc:/opt/key-networks/ztncui/etc \
-    loganjindev/zerotier-ztncui:v1.0.0
+    -v $PWD/zerotier-one:/var/lib/zerotier-one \
+    -v $PWD/ztncui/etc:/opt/key-networks/ztncui/etc \
+    loganjindev/zerotier-ztncui:latest
 # 参数注释
 --net=host #使用主机网络
 --name zerotier-planet # 容器名
 --restart unless-stopped # 容器重启策略
--v ./zerotier-one:/var/lib/zerotier-one \ # 将容器/var/lib/zerotier-one挂载到主机./zerotier-one
--v ./ztncui/etc:/opt/key-networks/ztncui/etc \ # 将容器/opt/key-networks/ztncui/etc挂载到主机./ztncui/etc
+-v $PWD/zerotier-one:/var/lib/zerotier-one \ # 将容器/var/lib/zerotier-one挂载到主机$PWD/zerotier-one
+-v $PWD/ztncui/etc:/opt/key-networks/ztncui/etc \ # 将容器/opt/key-networks/ztncui/etc挂载到主机$PWD/ztncui/etc
 ```
 
 ##### 三、docker-compose部署
