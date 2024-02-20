@@ -128,7 +128,7 @@ zerotier-cli leave Network ID
 
 ### 结语
 
-*   此镜像基于[kmahyyg/ztncui-aio](https://github.com/kmahyyg/ztncui-aio)项目改造，在此特别感谢，此外已将zerotier更新至v1.10.1最新版。
+*   此镜像基于[kmahyyg/ztncui-aio](https://github.com/kmahyyg/ztncui-aio)项目改造，在此特别感谢，此外已将zerotier更新至v1.12.2最新版。
 *   **配置官方planet+moon** 不是很稳定有时ping会丢包，因此推荐 **配置私人planet+moon** 更稳定。
 *   经测试**配置私人planet+moon**对比**只配置私人planet**ping time基本都在10-20s，可根据实际情况部署planet moon。
 *   如果部署或者其他问题欢迎去[我的博客(www.loganjin.cn)](https://www.loganjin.cn/)留言或者微信公众号([Python技术交流圈](https://img-blog.csdnimg.cn/img_convert/09f3ccbb0f9231855f20b0f5fca7da16.png#pic_center))留言交流哦。
